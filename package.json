@@ -1,19 +1,24 @@
 {
   "name": "mount-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "type": "module",
-  "scripts": {
-    "start": "nodemon index.js"
-  },
   "keywords": [],
-  "author": "",
+  "author": "garryvar",
   "license": "ISC",
+
+  "scripts": {
+    "start": "browser-sync start --server src --no-notify --no-ui --cwd src --files index.html, styles/**/*, img/**/*",
+    "build": "npm run html && npm run styles",
+    "html": "html-minifier --remove-comments --collapse-whitespace --input-dir src --output-dir dist --file-ext html",
+    "styles": "postcss src/styles/index.css  --use postcss-import --use postcss-csso --no-map --output dist/styles/index.css"
+  },
   "devDependencies": {
-    "disconnect": "^1.2.2",
-    "express": "^4.17.2",
-    "nodemon": "^2.0.15",
-    "uuid": "^8.3.2"
+    "browser-sync": "^3.0.2",
+    "html-minifier": "^4.0.0",
+    "postcss-cli": "^11.0.0",
+    "postcss-csso": "^6.0.1",
+    "postcss-import": "^15.1.0"
   }
 }
