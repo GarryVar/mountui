@@ -1,0 +1,30 @@
+.date {
+  height: 100%;
+}
+
+.date__inner {
+  display: grid;
+  grid-template-columns: min-content;
+  grid-template-rows: min-content min-content;
+  justify-content: center;
+  align-content: space-around;
+
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+
+  color: white;
+  font-size: 50px;
+  font-weight: lighter;
+  background-color: rgba(182, 13, 13, 0.445);
+}
+
+.date__time {
+  font-size: 40px;
+}
+
+.date__now {
+  order: -1;
+  margin: auto;
+  font-size: 20px;
+}
