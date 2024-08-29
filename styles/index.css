@@ -1,8 +1,8 @@
-@import "./main.css";
-@import "./container.css";
-@import "./nature-bg.css";
-@import "./position-wrapper.css";
-@import "./ui-components/title/title.css";
-@import "./ui-components/buttons/buttons.css";
-@import "./grid-masonry-4-fr.css";
-@import "./date/date.css";
+@import "main.css";
+@import "container.css";
+@import "nature-bg.css";
+@import "position-wrapper.css";
+@import "ui-components/title/title.css";
+@import "ui-components/buttons/buttons.css";
+@import "grid-masonry-4-fr.css";
+@import "date/date.css";
